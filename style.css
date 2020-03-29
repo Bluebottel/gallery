@@ -48,6 +48,7 @@ body, html {
 }
 
 .headline {
+    box-sizing: border-box;
     text-align: center;
     font-size: 1.5rem;
     max-height: 5rem;
@@ -97,10 +98,7 @@ body, html {
 	margin-bottom: 1vh;
 	width: 100%;
 	font-size: 3vw;
-
-	/* TODO: CSS feature sniff for android chrome */
-	/* 56px should be the exact size of the top menu */
-	top: 56px;
+	top: 0;
     }
 
     .coverImage {
