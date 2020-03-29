@@ -49,7 +49,7 @@ body, html {
 
 .headline {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     max-height: 5rem;
     background: #7f9db9;
     box-shadow: 0px 0px 1px #0000008c;
@@ -76,14 +76,17 @@ body, html {
     margin-top: -2vh;
 }
 
+/* mobile mode */
 @media (max-width: 1000px) {
     #aligner {
 	display: block;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	border: none;
     }
 
+    /* the darker 3D background part of the banner */
     .headlineTriangle {
 	visibility: hidden;
     }
@@ -92,6 +95,18 @@ body, html {
 	width: 100%;
 	position: sticky;
 	margin-bottom: 1vh;
-	top: 0;
+	width: 100%;
+	font-size: 3vw;
+
+	/* TODO: CSS feature sniff for android chrome */
+	/* 56px should be the exact size of the top menu */
+	top: 56px;
     }
+
+    .coverImage {
+	width: 100%;
+	max-width: none;
+    }
+
+    
 }
